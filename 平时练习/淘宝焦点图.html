@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: olive;
+        }
+
+        .box1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .tb-promo {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+        }
+
+        .tb-promo img {
+            width: 520px;
+            height: 280px;
+        }
+
+        .tb-left {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            left: 0;
+            width: 20px;
+            height: 30px;
+            background: rgba(0, 0, 0, .3);
+            color: white;
+            text-decoration: none;
+            border-radius: 0 50% 50% 0;
+        }
+
+        .tb-right {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            right: 0;
+            width: 20px;
+            height: 30px;
+            background: rgba(0, 0, 0, .3);
+            color: white;
+            text-decoration: none;
+            border-radius: 50% 0 0 50%;
+        }
+
+        .tb-nav {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            background: rgba(252, 252, 252, 0.3);
+            border-radius: 7px;
+        }
+
+        .tb-nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 4px;
+            list-style: none;
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="tb-promo">
+        <img src="img/taobao.jpg" alt="">
+        <a href="" class="tb-left">&lt;</a>
+        <a href="" class="tb-right">&gt;</a>
+        <ul class="tb-nav">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

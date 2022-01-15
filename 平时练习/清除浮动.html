@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            border: 1px solid black;
+            /* 清除浮动 */
+            /* overflow: hidden; */
+        }
+
+        /* 清除浮动 */
+        /* .father:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        } */
+        /* 兼容IE6、7 */
+        /* 清除浮动 */
+        .father:before,
+        .father:after {
+            content: "";
+            display: table;
+        }
+
+        .father:after {
+            clear: both;
+        }
+
+
+        .father {
+            /*IE6、7专有*/
+            *zoom: 1;
+        }
+
+        .son1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .son2 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        .uncle {
+            height: 300px;
+            background-color: olivedrab;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son1">
+        </div>
+        <div class="son2">
+        </div>
+        <!-- 清除浮动  -->
+        <!-- <div class="clean" style="clear: both;"></div> -->
+    </div>
+    <div class="uncle"></div>
+</body>
+
+</html>
